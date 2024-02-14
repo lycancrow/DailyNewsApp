@@ -1,13 +1,13 @@
 //
-//  NewsAppUITestsLaunchTests.swift
-//  NewsAppUITests
+//  newsUITestsLaunchTests.swift
+//  newsUITests
 //
-//  Created by Luis Felipe on 2024-02-11.
+//  Created by Luis Felipe on 2024-02-13.
 //
 
 import XCTest
 
-final class NewsAppUITestsLaunchTests: XCTestCase {
+final class newsUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

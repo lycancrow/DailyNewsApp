@@ -21,3 +21,4 @@ struct NewsSource: Codable {
     let language: String
     let country: String
 }
+
