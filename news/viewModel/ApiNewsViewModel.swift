@@ -10,7 +10,7 @@ import Alamofire
 
 class ApiNewsViewModel : ObservableObject{
     
-    @Published var users: [NewsModel] = []
+    @Published var newsList: [NewsModel] = []
 
     init() {
         fetchNews()
@@ -21,7 +21,7 @@ class ApiNewsViewModel : ObservableObject{
             switch result {
             case .success(let news):
                 DispatchQueue.main.async {
-                    self.users = news
+                    self.newsList = news
                 }
             case .failure(let error):
                 print("Error: \(error)")

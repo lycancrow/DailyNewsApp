@@ -8,7 +8,7 @@
 
 
 import SwiftUI
-
+import Lottie
 
 struct SplashView: View {
     @State var isActive : Bool = false
@@ -18,21 +18,26 @@ struct SplashView: View {
     
     var body: some View {
        
+        ZStack{
+            Color.backgroundLayout.ignoresSafeArea()
+            
             if isActive {
                 MainView()
             }
             else {
                 VStack {
-                    LottieAnimationView(filename: "globe_news", loopMode: .loop)
+                    LottieViewNewsAnimation(name: "globe_news")
                 }
                 .onAppear {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
                         withAnimation {
                             self.isActive = true
                         }
                     }
                 }
             }
+        }
+        
     }
 }
 

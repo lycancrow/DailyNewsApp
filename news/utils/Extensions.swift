@@ -10,4 +10,5 @@ import SwiftUI
 
 extension Color {
     static let backgroundLayout = Color("background")
+    static let goldenText = Color("gold")
 }

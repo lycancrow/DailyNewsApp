@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6705D062B7C93B400F057DF /* Chomsky.otf in Resources */ = {isa = PBXBuildFile; fileRef = F6705D052B7C93B400F057DF /* Chomsky.otf */; };
 		F6F4A6962B7C44EF0051D187 /* newsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F4A6952B7C44EF0051D187 /* newsApp.swift */; };
 		F6F4A69A2B7C44F00051D187 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F4A6992B7C44F00051D187 /* Assets.xcassets */; };
 		F6F4A69D2B7C44F00051D187 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F4A69C2B7C44F00051D187 /* Preview Assets.xcassets */; };
@@ -20,12 +21,16 @@
 		F6F4A6CD2B7C46B00051D187 /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = F6F4A6CC2B7C46B00051D187 /* SwiftUIFontIcon */; };
 		F6F4A6D62B7C486E0051D187 /* ApiModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F4A6D52B7C486E0051D187 /* ApiModule.swift */; };
 		F6F4A6D82B7C48BD0051D187 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F4A6D72B7C48BD0051D187 /* Extensions.swift */; };
-		F6F4A6DA2B7C48F90051D187 /* LottieAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F4A6D92B7C48F90051D187 /* LottieAnimationView.swift */; };
+		F6F4A6DA2B7C48F90051D187 /* LottieViewNewsAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F4A6D92B7C48F90051D187 /* LottieViewNewsAnimation.swift */; };
 		F6F4A6DC2B7C49850051D187 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F4A6DB2B7C49850051D187 /* NewsModel.swift */; };
 		F6F4A6DE2B7C49B20051D187 /* NewsSourcesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F4A6DD2B7C49B20051D187 /* NewsSourcesModel.swift */; };
 		F6F4A6E02B7C49F00051D187 /* ApiNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F4A6DF2B7C49F00051D187 /* ApiNewsViewModel.swift */; };
 		F6F4A6E22B7C4A460051D187 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F4A6E12B7C4A460051D187 /* SplashView.swift */; };
 		F6F4A6E42B7C4A6F0051D187 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F4A6E32B7C4A6F0051D187 /* MainView.swift */; };
+		F6F4A6EE2B7C7A870051D187 /* globe_news.json in Resources */ = {isa = PBXBuildFile; fileRef = F6F4A6ED2B7C7A860051D187 /* globe_news.json */; };
+		F6F4A6F42B7C81FC0051D187 /* ButtonDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F4A6F32B7C81FC0051D187 /* ButtonDisplay.swift */; };
+		F6F4A6F52B7C81FC0051D187 /* ButtonDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F4A6F32B7C81FC0051D187 /* ButtonDisplay.swift */; };
+		F6F4A6F62B7C81FC0051D187 /* ButtonDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F4A6F32B7C81FC0051D187 /* ButtonDisplay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F6705D052B7C93B400F057DF /* Chomsky.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chomsky.otf; sourceTree = "<group>"; };
 		F6F4A6922B7C44EF0051D187 /* news.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = news.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F4A6952B7C44EF0051D187 /* newsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsApp.swift; sourceTree = "<group>"; };
 		F6F4A6992B7C44F00051D187 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,12 +63,15 @@
 		F6F4A6B22B7C44F00051D187 /* newsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F6F4A6D52B7C486E0051D187 /* ApiModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiModule.swift; sourceTree = "<group>"; };
 		F6F4A6D72B7C48BD0051D187 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		F6F4A6D92B7C48F90051D187 /* LottieAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimationView.swift; sourceTree = "<group>"; };
+		F6F4A6D92B7C48F90051D187 /* LottieViewNewsAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewNewsAnimation.swift; sourceTree = "<group>"; };
 		F6F4A6DB2B7C49850051D187 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		F6F4A6DD2B7C49B20051D187 /* NewsSourcesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSourcesModel.swift; sourceTree = "<group>"; };
 		F6F4A6DF2B7C49F00051D187 /* ApiNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiNewsViewModel.swift; sourceTree = "<group>"; };
 		F6F4A6E12B7C4A460051D187 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		F6F4A6E32B7C4A6F0051D187 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F6F4A6EC2B7C78DE0051D187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F6F4A6ED2B7C7A860051D187 /* globe_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = globe_news.json; sourceTree = "<group>"; };
+		F6F4A6F32B7C81FC0051D187 /* ButtonDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDisplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +104,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F6705D042B7C938800F057DF /* font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
 		F6F4A6892B7C44EF0051D187 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +134,9 @@
 		F6F4A6942B7C44EF0051D187 /* news */ = {
 			isa = PBXGroup;
 			children = (
+				F6705D042B7C938800F057DF /* font */,
+				F6705D052B7C93B400F057DF /* Chomsky.otf */,
+				F6F4A6EC2B7C78DE0051D187 /* Info.plist */,
 				F6F4A6D42B7C47F30051D187 /* apiModule */,
 				F6F4A6D22B7C47C40051D187 /* model */,
 				F6F4A6D12B7C47B20051D187 /* viewModel */,
@@ -160,7 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				F6F4A6D72B7C48BD0051D187 /* Extensions.swift */,
-				F6F4A6D92B7C48F90051D187 /* LottieAnimationView.swift */,
+				F6F4A6D92B7C48F90051D187 /* LottieViewNewsAnimation.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -168,6 +187,7 @@
 		F6F4A6CF2B7C47970051D187 /* lottieFiles */ = {
 			isa = PBXGroup;
 			children = (
+				F6F4A6ED2B7C7A860051D187 /* globe_news.json */,
 			);
 			path = lottieFiles;
 			sourceTree = "<group>";
@@ -177,6 +197,7 @@
 			children = (
 				F6F4A6E12B7C4A460051D187 /* SplashView.swift */,
 				F6F4A6E32B7C4A6F0051D187 /* MainView.swift */,
+				F6F4A6F32B7C81FC0051D187 /* ButtonDisplay.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -324,6 +345,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6705D062B7C93B400F057DF /* Chomsky.otf in Resources */,
+				F6F4A6EE2B7C7A870051D187 /* globe_news.json in Resources */,
 				F6F4A69D2B7C44F00051D187 /* Preview Assets.xcassets in Resources */,
 				F6F4A69A2B7C44F00051D187 /* Assets.xcassets in Resources */,
 			);
@@ -350,8 +373,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6F4A6DA2B7C48F90051D187 /* LottieAnimationView.swift in Sources */,
+				F6F4A6DA2B7C48F90051D187 /* LottieViewNewsAnimation.swift in Sources */,
 				F6F4A6E42B7C4A6F0051D187 /* MainView.swift in Sources */,
+				F6F4A6F42B7C81FC0051D187 /* ButtonDisplay.swift in Sources */,
 				F6F4A6E22B7C4A460051D187 /* SplashView.swift in Sources */,
 				F6F4A6DE2B7C49B20051D187 /* NewsSourcesModel.swift in Sources */,
 				F6F4A6D62B7C486E0051D187 /* ApiModule.swift in Sources */,
@@ -366,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6F4A6F52B7C81FC0051D187 /* ButtonDisplay.swift in Sources */,
 				F6F4A6A72B7C44F00051D187 /* newsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6F4A6B12B7C44F00051D187 /* newsUITests.swift in Sources */,
+				F6F4A6F62B7C81FC0051D187 /* ButtonDisplay.swift in Sources */,
 				F6F4A6B32B7C44F00051D187 /* newsUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,6 +550,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"news/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = news/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -552,6 +579,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"news/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = news/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
