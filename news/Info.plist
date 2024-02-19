@@ -5,6 +5,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Chomsky.otf</string>
+		<string>Roboto-Medium</string>
 	</array>
 </dict>
 </plist>

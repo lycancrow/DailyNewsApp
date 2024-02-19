@@ -14,17 +14,28 @@ class ApiModule {
     private init() {}
 
     func getNews(completion: @escaping (Result<[NewsModel], Error>) -> Void) {
-        AF.request("https://newsapi.org/v2/top-headlines?country=ca&apiKey=b99255752a9040ae94c12255d5d26147")
-            .validate()
-            .responseDecodable(of: [NewsModel].self) { response in
-                switch response.result {
-                case .success(let news):
-                    completion(.success(news))
-                case .failure(let error):
-                    completion(.failure(error))
+            AF.request("https://newsapi.org/v2/top-headlines?country=ca&apiKey=b99255752a9040ae94c12255d5d26147")
+                .validate()
+                .responseJSON { response in
+                    switch response.result {
+                    case .success(let value):
+                        do {
+                            guard let data = response.data else {
+                                completion(.failure(NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "Data is empty"])))
+                                return
+                            }
+                            let decoder = JSONDecoder()
+                            decoder.keyDecodingStrategy = .convertFromSnakeCase
+                            let newsModel = try decoder.decode(NewsModel.self, from: data)
+                            completion(.success([newsModel]))
+                        } catch {
+                            completion(.failure(error))
+                        }
+                    case .failure(let error):
+                        completion(.failure(error))
+                    }
                 }
-            }
-    }
+        }
     
     
     
@@ -42,23 +53,58 @@ class ApiModule {
     }
     
     
-
-    
     func searchNews(for searchNews: String, completion: @escaping (Result<[NewsModel], Error>) -> Void) {
-        let urlString = "https://newsapi.org/v2/everything?q=\(searchNews)&apiKey=b99255752a9040ae94c12255d5d26147"
-        
-        AF.request(urlString)
+         AF.request("https://newsapi.org/v2/everything?q=\(searchNews)&apiKey=b99255752a9040ae94c12255d5d26147")
             .validate()
-            .responseDecodable(of: [NewsModel].self) { response in
+            .responseJSON { response in
                 switch response.result {
-                case .success(let news):
-                    completion(.success(news))
+                case .success(let value):
+                    do {
+                        guard let data = response.data else {
+                            completion(.failure(NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "Data is empty"])))
+                            return
+                        }
+                        let decoder = JSONDecoder()
+                        decoder.keyDecodingStrategy = .convertFromSnakeCase
+                        let newsModel = try decoder.decode(NewsModel.self, from: data)
+                        completion(.success([newsModel]))
+                    } catch {
+                        completion(.failure(error))
+                    }
                 case .failure(let error):
                     completion(.failure(error))
                 }
             }
-    }
-
     
+    }
     
 }
+
+
+
+/*
+ completion: @escaping (Result<[NewsModel], Error>) -> Void) {
+         AF.request("https://newsapi.org/v2/top-headlines?country=ca&apiKey=b99255752a9040ae94c12255d5d26147")
+             .validate()
+             .responseJSON { response in
+                 switch response.result {
+                 case .success(let value):
+                     do {
+                         guard let data = response.data else {
+                             completion(.failure(NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "Data is empty"])))
+                             return
+                         }
+                         let decoder = JSONDecoder()
+                         decoder.keyDecodingStrategy = .convertFromSnakeCase
+                         let newsModel = try decoder.decode(NewsModel.self, from: data)
+                         completion(.success([newsModel]))
+                     } catch {
+                         completion(.failure(error))
+                     }
+                 case .failure(let error):
+                     completion(.failure(error))
+                 }
+             }
+     }
+ 
+ */

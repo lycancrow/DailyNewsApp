@@ -31,4 +31,18 @@ class ApiNewsViewModel : ObservableObject{
     
     
     
+    func fetchNewsByCategory(categories: String) {
+        ApiModule.shared.searchNews(for: categories){ result in
+            switch result {
+            case .success(let news):
+                DispatchQueue.main.async {
+                    self.newsList = news
+                }
+            case .failure(let error):
+                print("Error: \(error)")
+            }
+        }
+    }
+    
+    
 }

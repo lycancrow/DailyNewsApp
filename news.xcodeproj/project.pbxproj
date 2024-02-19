@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		F6705D062B7C93B400F057DF /* Chomsky.otf in Resources */ = {isa = PBXBuildFile; fileRef = F6705D052B7C93B400F057DF /* Chomsky.otf */; };
+		F67376C32B829566004BF124 /* AboutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67376C22B829566004BF124 /* AboutApp.swift */; };
+		F67376C52B829C2E004BF124 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67376C42B829C2E004BF124 /* Roboto-Medium.ttf */; };
+		F67376C72B829D71004BF124 /* Sources.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67376C62B829D71004BF124 /* Sources.swift */; };
+		F67376C92B82E0E7004BF124 /* no_data_available.json in Resources */ = {isa = PBXBuildFile; fileRef = F67376C82B82E0E7004BF124 /* no_data_available.json */; };
+		F67376CB2B83C443004BF124 /* newpaper_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = F67376CA2B83C443004BF124 /* newpaper_animation.json */; };
 		F6F4A6962B7C44EF0051D187 /* newsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F4A6952B7C44EF0051D187 /* newsApp.swift */; };
 		F6F4A69A2B7C44F00051D187 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F4A6992B7C44F00051D187 /* Assets.xcassets */; };
 		F6F4A69D2B7C44F00051D187 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F4A69C2B7C44F00051D187 /* Preview Assets.xcassets */; };
@@ -52,6 +57,11 @@
 
 /* Begin PBXFileReference section */
 		F6705D052B7C93B400F057DF /* Chomsky.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chomsky.otf; sourceTree = "<group>"; };
+		F67376C22B829566004BF124 /* AboutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutApp.swift; sourceTree = "<group>"; };
+		F67376C42B829C2E004BF124 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		F67376C62B829D71004BF124 /* Sources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources.swift; sourceTree = "<group>"; };
+		F67376C82B82E0E7004BF124 /* no_data_available.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = no_data_available.json; sourceTree = "<group>"; };
+		F67376CA2B83C443004BF124 /* newpaper_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = newpaper_animation.json; sourceTree = "<group>"; };
 		F6F4A6922B7C44EF0051D187 /* news.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = news.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F4A6952B7C44EF0051D187 /* newsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsApp.swift; sourceTree = "<group>"; };
 		F6F4A6992B7C44F00051D187 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,6 +117,8 @@
 		F6705D042B7C938800F057DF /* font */ = {
 			isa = PBXGroup;
 			children = (
+				F67376C42B829C2E004BF124 /* Roboto-Medium.ttf */,
+				F6705D052B7C93B400F057DF /* Chomsky.otf */,
 			);
 			path = font;
 			sourceTree = "<group>";
@@ -135,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				F6705D042B7C938800F057DF /* font */,
-				F6705D052B7C93B400F057DF /* Chomsky.otf */,
 				F6F4A6EC2B7C78DE0051D187 /* Info.plist */,
 				F6F4A6D42B7C47F30051D187 /* apiModule */,
 				F6F4A6D22B7C47C40051D187 /* model */,
@@ -187,6 +198,8 @@
 		F6F4A6CF2B7C47970051D187 /* lottieFiles */ = {
 			isa = PBXGroup;
 			children = (
+				F67376CA2B83C443004BF124 /* newpaper_animation.json */,
+				F67376C82B82E0E7004BF124 /* no_data_available.json */,
 				F6F4A6ED2B7C7A860051D187 /* globe_news.json */,
 			);
 			path = lottieFiles;
@@ -198,6 +211,8 @@
 				F6F4A6E12B7C4A460051D187 /* SplashView.swift */,
 				F6F4A6E32B7C4A6F0051D187 /* MainView.swift */,
 				F6F4A6F32B7C81FC0051D187 /* ButtonDisplay.swift */,
+				F67376C22B829566004BF124 /* AboutApp.swift */,
+				F67376C62B829D71004BF124 /* Sources.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -345,7 +360,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F67376C52B829C2E004BF124 /* Roboto-Medium.ttf in Resources */,
+				F67376CB2B83C443004BF124 /* newpaper_animation.json in Resources */,
 				F6705D062B7C93B400F057DF /* Chomsky.otf in Resources */,
+				F67376C92B82E0E7004BF124 /* no_data_available.json in Resources */,
 				F6F4A6EE2B7C7A870051D187 /* globe_news.json in Resources */,
 				F6F4A69D2B7C44F00051D187 /* Preview Assets.xcassets in Resources */,
 				F6F4A69A2B7C44F00051D187 /* Assets.xcassets in Resources */,
@@ -373,6 +391,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F67376C72B829D71004BF124 /* Sources.swift in Sources */,
+				F67376C32B829566004BF124 /* AboutApp.swift in Sources */,
 				F6F4A6DA2B7C48F90051D187 /* LottieViewNewsAnimation.swift in Sources */,
 				F6F4A6E42B7C4A6F0051D187 /* MainView.swift in Sources */,
 				F6F4A6F42B7C81FC0051D187 /* ButtonDisplay.swift in Sources */,
