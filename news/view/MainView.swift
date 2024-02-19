@@ -272,11 +272,12 @@ struct MainView: View {
                     VStack {
                                         if viewModel.newsList.flatMap({ $0.articles }).isEmpty {
                                             
-                                            
                                             LottieViewNewsAnimation(name: "no_data_available")
+                                                .frame(width: 375, height: 300)
                                                 .position(x: UIScreen.main.bounds.width * 0.5, y: UIScreen.main.bounds.height * 0.6)
+                                            
                                         } else {
-                                            // Mostrar la lista si hay datos disponibles
+                                          
                                             List(viewModel.newsList.flatMap { $0.articles }, id: \.url) { article in
                                                 Link(destination: URL(string: article.url)!) {
                                                     VStack {
@@ -291,7 +292,20 @@ struct MainView: View {
                                                         }
                                                         
                                                         if let urlToImage = article.urlToImage {
-                                                            Image(urlToImage)
+                                                            AsyncImage(url: URL(string: article.urlToImage!)) { phase in
+                                                                switch phase {
+                                                                case .empty:
+                                                                    ProgressView()
+                                                                case .success(let image):
+                                                                    image
+                                                                        .resizable()
+                                                                        .aspectRatio(contentMode: .fit) // Ajustar imagen al contenido
+                                                                case .failure:
+                                                                    Text("Failed to load image")
+                                                                @unknown default:
+                                                                    EmptyView()
+                                                                }
+                                                            }
                                                         }
                                                         
                                                         Text(article.title)
@@ -304,7 +318,10 @@ struct MainView: View {
                                             .scrollContentBackground(.hidden)
                                             .listStyle(GroupedListStyle())
                                             .position(x: UIScreen.main.bounds.width * 0.5, y: UIScreen.main.bounds.height * 0.76)
+
                                         }
+                        
+                        
                                     }
                                     .onAppear {
                                         viewModel.fetchNews()
